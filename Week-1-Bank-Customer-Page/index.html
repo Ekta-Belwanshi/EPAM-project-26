@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EInfosys Bank - Customer Registration Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo-section">
+
+                <div class="circle-logo">
+                    EI
+                </div>
+
+                <h2>
+                    EInfosys Bank
+                </h2>
+
+            </div>
+
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+
+
+    <!-- Hero Section -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>
+                Welcome to EInfosys Bank
+            </h1>
+
+
+            <p>
+                Secure banking solutions with easy account opening
+                and reliable financial services.
+            </p>
+
+
+            <button id="openAccountBtn">
+                Open Account
+            </button>
+
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- Services Section -->
+
+    <section class="services" id="services">
+
+        <h2>
+            Our Services
+        </h2>
+
+
+        <div class="service-container">
+
+
+            <div class="service-card">
+
+                <h3>
+                    Savings Account
+                </h3>
+
+                <p>
+                    Safe and secure savings solutions for individuals.
+                </p>
+
+            </div>
+
+
+
+            <div class="service-card">
+
+                <h3>
+                    Current Account
+                </h3>
+
+                <p>
+                    Banking solutions designed for businesses.
+                </p>
+
+            </div>
+
+
+
+            <div class="service-card">
+
+                <h3>
+                    Digital Banking
+                </h3>
+
+                <p>
+                    Easy and convenient online banking facilities.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- Registration Section -->
+
+    <section class="registration-section" id="registration">
+
+
+        <div class="registration-card">
+
+
+            <h2>
+                Customer Registration Form
+            </h2>
+
+
+
+            <form id="registrationForm">
+
+
+
+                <!-- Full Name -->
+
+                <div class="form-group">
+
+                    <label>
+                        Full Name
+                    </label>
+
+
+                    <input 
+                    type="text" 
+                    id="name"
+                    placeholder="Enter your full name">
+
+
+                    <small class="error">
+                    </small>
+
+                </div>
+
+
+
+
+
+                <!-- Date Of Birth -->
+
+                <div class="form-group">
+
+                    <label>
+                        Date of Birth
+                    </label>
+
+
+                    <input 
+                    type="date"
+                    id="dob">
+
+
+                    <small class="error">
+                    </small>
+
+                </div>
+
+
+
+
+
+                <!-- Gender -->
+
+                <div class="form-group">
+
+                    <label>
+                        Gender
+                    </label>
+
+
+                    <select id="gender">
+
+
+                        <option value="">
+                            Select Gender
+                        </option>
+
+
+                        <option>
+                            Male
+                        </option>
+
+
+                        <option>
+                            Female
+                        </option>
+
+
+                        <option>
+                            Other
+                        </option>
+
+
+                    </select>
+
+
+                    <small class="error">
+                    </small>
+
+
+                </div>
+
+
+
+
+
+                <!-- Mobile -->
+
+                <div class="form-group">
+
+
+                    <label>
+                        Mobile Number
+                    </label>
+
+
+                    <input 
+                    type="text"
+                    id="mobile"
+                    placeholder="10 digit mobile number">
+
+
+                    <small class="error">
+                    </small>
+
+
+                </div>
+
+
+
+
+
+
+                <!-- Email -->
+
+                <div class="form-group">
+
+
+                    <label>
+                        Email Address
+                    </label>
+
+
+                    <input 
+                    type="email"
+                    id="email"
+                    placeholder="example@gmail.com">
+
+
+                    <small class="error">
+                    </small>
+
+
+                </div>
+
+
+
+
+
+
+                <!-- Address -->
+
+                <div class="form-group">
+
+
+                    <label>
+                        Address
+                    </label>
+
+
+                    <textarea 
+                    id="address"
+                    placeholder="Enter your address"></textarea>
+
+
+                    <small class="error">
+                    </small>
+
+
+                </div>
+
+
+
+
+
+
+
+                <!-- Account Type -->
+
+                <div class="form-group">
+
+
+                    <label>
+                        Account Type
+                    </label>
+
+
+                    <select id="accountType">
+
+
+                        <option value="">
+                            Select Account Type
+                        </option>
+
+
+                        <option value="Savings">
+                            Savings Account
+                        </option>
+
+
+                        <option value="Current">
+                            Current Account
+                        </option>
+
+
+                    </select>
+
+
+                    <small class="error">
+                    </small>
+
+
+                </div>
+
+
+
+
+
+
+
+                <!-- Deposit -->
+
+                <div class="form-group">
+
+
+                    <label>
+                        Initial Deposit
+                    </label>
+
+
+                    <input 
+                    type="number"
+                    id="deposit"
+                    placeholder="Minimum ₹1000">
+
+
+                    <small class="error">
+                    </small>
+
+
+                </div>
+
+
+
+
+
+
+
+                <!-- Password -->
+
+                <div class="form-group">
+
+
+                    <label>
+                        Password
+                    </label>
+
+
+                    <input 
+                    type="password"
+                    id="password"
+                    placeholder="Minimum 8 characters">
+
+
+                    <small class="error">
+                    </small>
+
+
+                </div>
+
+
+
+
+
+
+
+                <!-- Confirm Password -->
+
+                <div class="form-group">
+
+
+                    <label>
+                        Confirm Password
+                    </label>
+
+
+                    <input 
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Re-enter password">
+
+
+                    <small class="error">
+                    </small>
+
+
+                </div>
+
+
+
+
+
+
+
+                <!-- Terms -->
+
+                <div class="terms">
+
+
+                    <input 
+                    type="checkbox"
+                    id="terms">
+
+
+                    <label>
+                        I agree to Terms & Conditions
+                    </label>
+
+
+                </div>
+
+
+                <small class="error terms-error">
+                </small>
+
+
+
+
+
+
+
+
+                <button 
+                type="submit"
+                class="submit-btn">
+
+                    Create Account
+
+                </button>
+
+
+
+
+            </form>
+
+
+
+            <!-- Success Card -->
+
+            <div 
+            class="success-card"
+            id="successCard">
+
+
+                <h3>
+                    Account Created Successfully!
+                </h3>
+
+
+                <p>
+                    Customer Name:
+                    <span id="customerName"></span>
+                </p>
+
+
+                <p>
+                    Account Type:
+                    <span id="customerAccount"></span>
+                </p>
+
+
+                <p>
+                    Mobile Number:
+                    <span id="customerMobile"></span>
+                </p>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+    <!-- Footer -->
+
+
+    <footer id="contact">
+
+
+        <div class="footer-content">
+
+
+            <h3>
+                EInfosys Bank
+            </h3>
+
+
+            <p>
+                Address: Bhopal, Madhya Pradesh, India
+            </p>
+
+
+            <p>
+                Phone: +91 9876543210
+            </p>
+
+
+            <p>
+                Email: support@einfosysbank.com
+            </p>
+
+
+            <p class="copyright">
+
+                © 2026 EInfosys Bank. All Rights Reserved.
+
+            </p>
+
+
+        </div>
+
+
+    </footer>
+
+
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
