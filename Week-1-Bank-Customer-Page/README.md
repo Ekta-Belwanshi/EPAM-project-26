@@ -118,6 +118,9 @@ The website works on:
 
 ## Folder Structure
 
+## Folder Structure
+
+```text
 Week-1-Bank-Customer-Page/
 
 │
@@ -128,6 +131,7 @@ Week-1-Bank-Customer-Page/
 ├── script.js
 │
 └── README.md
+```
 
 
 ## How to Run
